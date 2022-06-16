@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandit Kad's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alfa+Slab+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Roboto+Slab:wght@100;300;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alfa+Slab+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Roboto+Slab:wght@100;300;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="vk.png">
+</head>
+
+<body>
+    <div class="nav">
+        <style>
+            .nav {
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100vw;
+                height: 7vh;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                position: fixed;
+                z-index: 9999;
+                background-color: #222831;
+            }
+
+            .name {
+                font-size: 4vh;
+                margin-left: 2%;
+            }
+
+            .items {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .nav-item {
+                font-size: 2vh;
+                color: #fff;
+                transition: all 300ms ease-out;
+                cursor: pointer;
+                margin-right: 5%;
+                position: relative;
+                text-decoration: none;
+                margin-right: 2vw;
+            }
+
+            .nav-item::after {
+                content: "";
+                height: 1px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -0.1vh;
+                opacity: 0;
+                transform: scaleX(0);
+                transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+            }
+
+            .nav-item:hover::after {
+                transform: scaleX(1);
+                opacity: 1;
+            }
+
+            a:link {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        </style>
+        <div class="name">
+            VK
+        </div>
+        <div class="items">
+            <a href="index.html">
+                <div class="nav-item">
+                    Home
+                </div>
+            </a>
+            <a href="skills.html">
+                <div class="nav-item">
+                    Skills
+                </div>
+            </a>
+            <a href="contact.html">
+                <div class="nav-item">
+                    Contact
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="intro">
+            <span class="name-2">Vandit Kad</span> <br>
+            <div class="skill-hover">
+                <span class="skills">Programmer / Video Making / Web Development</span><br>
+                <span class="moreabtme">more</span>
+                <div class="more">
+                    <div class="abtme">
+                        Hey, I am <span style="color: #00ADB5;">Vandit Kad</span> a 15 year old programmer who loves to code. <br>
+                        Front End Developer who focuses on writing clean, elegant and efficient code. Love HTML5, CSS, Booststrap, Python and a touch of Video Editing.
+                    </div>
+                    <div class="connections">
+                        <a href="https://www.youtube.com/channel/UCG7ZYghqDWK1uFaBhltbBAg" target="_blank"><img src="youtube.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/vandit-kad-355ab723a/"target="_blank"><img src="linkedIn.png" alt="" style="border-radius: 1vh;"></a>
+                        <a href="https://github.com/MrVoracious"target="_blank"><img src="github.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="porfile.png" alt="">
+        </div>
+</body>
+
+</html>
