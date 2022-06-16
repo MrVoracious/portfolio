@@ -84,33 +84,33 @@ body{
 }
 
 .python > .subHeading{
-    background: linear-gradient(to right, #F8D059 0% 85%, white 85% 100%);
-    background-clip: text;
-    color: transparent;
+  background-image: linear-gradient(to right, #F8D059 0% 85%, white 85% 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 
 .html > .subHeading{
     background: linear-gradient(to right, #F8D059 0% 100%, white 100% 100%);
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .css > .subHeading{
     background: linear-gradient(to right, #F8D059 0% 85%, white 85% 100%);
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .java > .subHeading{
     background: linear-gradient(to right, #F8D059 0% 15%, white 15% 100%);
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .bootstrap > .subHeading{
     background: linear-gradient(to right, #F8D059 0% 70%, white 70% 100%);
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 div.details{
