@@ -307,6 +307,6 @@ body{
     }
     .msgclick{
         position: absolute;
-        bottom: 3vh;
+        bottom: 0vh;
     }
 }
