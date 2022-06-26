@@ -9,7 +9,7 @@ body{
 }
 
 .main-content{
-    height: 92vh;
+    min-height: 92vh;
     padding-top: 8vh;
     width: 100vw;
     color: white;
@@ -25,28 +25,13 @@ body{
 }
 
 .name-2{
-    font-size: 7vh;
+    font-size: 4vw;
     font-weight: 300;
     letter-spacing: 1.2vw;
 }
 
-.profile{
-    width: 50vw;
-    padding-left: 5vw;
-}
-
-.profile > img{
-    height: 90vh;
-    filter: grayscale(100%);
-    transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.profile > img:hover{
-    filter: grayscale(00%);
-}
-
 .skills{
-    font-size: 2.5vh;
+    font-size: 1.5vw;
     color: #6c757d;
 }
 
@@ -56,6 +41,7 @@ body{
 .moreabtme{
     color: #0d6efd;
     transition: all 700ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-size: 1.5vw;
 }  
 
 .more{
@@ -80,14 +66,10 @@ body{
     height: 80%;
 }
 
-.skill-hover:hover .more{
+.moreHover{
     margin-top: 5vh;
     opacity: 1;
-    font-size: 2vh;
-}
-
-.skill-hover:hover .moreabtme{
-    opacity: 0;
+    font-size: 1vw;
 }
 
 .connections{
@@ -107,4 +89,58 @@ body{
 .connections > a > img:hover{
     filter: grayscale(0%);
     cursor: pointer;
+}
+
+.profile{
+    width: 50vw;
+    padding-left: 5vw;
+}
+
+.profile > img{
+    width: 28vw;
+    filter: grayscale(100%);
+    transition: all 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.profile > img:hover{
+    filter: grayscale(00%);
+}
+
+
+@media only screen and (max-width: 620px) {
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20vh;
+    }
+    .intro{
+        width: 80vw;
+    }
+    .name-2{
+        font-size: 10vw;
+    }
+    .skills{
+        font-size: 2.7vw;
+    }
+    .moreabtme{
+        font-size: 2.7vw;
+    }
+    .skill-hover:hover .more{
+        font-size: 3vw;
+    }
+    .connections > a > img{
+        width: 7vw;
+        margin-right: 3vw;
+        filter: grayscale(0%);
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile > img{
+        width: 50vw;
+        filter: grayscale(0%);
+    }
 }

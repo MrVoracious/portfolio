@@ -34,14 +34,13 @@
                 height: 7vh;
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
                 position: fixed;
-                z-index: 9999;
+                z-index: 999;
                 background-color: #222831;
-        
             }
 
             .name {
                 font-size: 4vh;
-                margin-left: 2%;
+                margin-left: 2vw !important;
             }
 
             .items {
@@ -54,7 +53,6 @@
                 color: #fff;
                 transition: all 300ms ease-out;
                 cursor: pointer;
-                margin-right: 5%;
                 position: relative;
                 text-decoration: none;
                 margin-right: 2vw;
@@ -89,6 +87,15 @@
             a {
                 text-decoration: none;
             }
+
+            @media only screen and (max-width: 620px) {
+                .nav-item{
+                    margin-right: 4vw;
+                }
+                .name{
+                    margin-left: 4vw !important;
+                }
+            }
         </style>
         <div class="name">
             VK
@@ -117,17 +124,15 @@
                 Get In Touch
            </div>
            <div class="contacts">
-                <div class="contactBox" style="margin-left: 30vh;">
+                <div class="contactBox">
                     <div class="biBox">
                         <i class="bi bi-geo-alt"></i>
                     </div>
                     <div class="tagline">
                         Address
                     </div>
-                    <p class="details address">Jiwan Jyoti Apartments, <br>
-                        kabir das marg, pitampura <br>
-                        New Delhi 110034, Delhi <br>
-                        India
+                    <p class="details address">
+                        .
                     </p>
                 </div>
                 <div class="contactBox">
@@ -141,7 +146,7 @@
                         +91-7042483399
                     </p>
                 </div>
-                <div class="contactBox" style="margin-right: 30vh;">
+                <div class="contactBox">
                     <div class="biBox">
                         <i class="bi bi-envelope"></i>
                     </div>
@@ -160,14 +165,14 @@
                 <span class="subHeading">Leave a Message</span>
             <div class="form">
                 <label for="fname">Name</label>
-                <div class="name">
-                    <input placeholder="First Name" type="text" id="fname"><input placeholder="Last Name" type="text" name="" id="fname">
+                <div class="names">
+                    <input placeholder="First Name" type="text" id="fname"><input placeholder="Last Name" type="text" name="" id="lname">
                 </div>
                 <label for="mail">Email</label>
                 <input type="email" id="mail">
                 <label for="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <a href="#"><button class="submit">Submit</button></a>
+                <a href="#"><button class="submit" onClick="window.location.reload(true)">Submit</button></a>
             </div>
         </div>
     </div>
