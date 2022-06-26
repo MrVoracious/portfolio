@@ -305,8 +305,4 @@ body{
         font-size: 1.9vw;
         border-radius: 0.7vh;
     }
-    .msgclick{
-        position: absolute;
-        bottom: 0vh;
-    }
 }
