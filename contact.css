@@ -222,7 +222,7 @@ body{
 
 .msgclick{
     position: absolute;
-    bottom: -5vh;
+    bottom: -10vh;
 }
 
 .msg::after{
