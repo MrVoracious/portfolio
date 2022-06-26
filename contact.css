@@ -40,7 +40,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     padding-top: 15vh;
-    padding-bottom: 15vh ;
+    padding-bottom: 5vh ;
 }
 
 .bi{
@@ -220,6 +220,11 @@ body{
     border: 1px solid #3e434a;
 }
 
+.msgclick{
+    position: absolute;
+    bottom: -5vh;
+}
+
 .msg::after{
     content: 'message me';
 }
@@ -301,7 +306,7 @@ body{
         border-radius: 0.7vh;
     }
     .msgclick{
-        bottom: 3vh;
         position: absolute;
+        bottom: 3vh;
     }
 }
